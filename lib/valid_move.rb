@@ -1,3 +1,8 @@
+def input_to_index(index)
+  input_to_index = index.to_i
+  return index
+end
+
 # code your #valid_move? method here
 def valid_move?(board, index)
   if  (board[index] == " ") && index.between?(-1, 9) && !position_taken?(board, index)
